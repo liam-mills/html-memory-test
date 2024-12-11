@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Memory Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Memory Test</h1>
+        <div id="instructions">
+            <p>Enter HTML elements without angle brackets. For example:</p>
+            <p class="example">div</p>
+            <p>Submit each element individually.</p>
+            <p>The timer begins once you make your first guess.</p>
+        </div>
+        <div id="form">
+            <p id="timer-container" style="display: none;"><span id="timer">5</span> Minutes Remain</p>
+            <div class="form-inputs">
+                <input type="text" name="input" id="input">
+                <button id="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+            </div>
+        </div>
+        <div id="results" style="display: none;">
+            <p>You scored <span id="score">0</span> / 121!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
