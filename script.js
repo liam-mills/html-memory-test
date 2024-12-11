@@ -13,7 +13,10 @@ let timerIsRunning = false;
 const evaluateScore = () => {
     let scoreTally = 0;
     form.style.display = 'none';
-    guesses.forEach(guess => {
+
+    // Remove duplicate entries.
+    filteredGuesses = [...new Set(guesses)];
+    filteredGuesses.forEach(guess => {
         if (htmlList.includes(guess)) {
             scoreTally++;
         }
@@ -27,7 +30,7 @@ const startTimer = () => {
     instructions.style.display = 'none';
     timerContainer.style.display = 'block';
 
-    let currentTime = 5;
+    let currentTime = 1;
     // Update timer every minute.
     setInterval(function() {
         currentTime--;
