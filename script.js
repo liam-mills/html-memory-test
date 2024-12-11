@@ -30,7 +30,7 @@ const startTimer = () => {
     instructions.style.display = 'none';
     timerContainer.style.display = 'block';
 
-    let currentTime = 1;
+    let currentTime = 5;
     // Update timer every minute.
     setInterval(function() {
         currentTime--;
